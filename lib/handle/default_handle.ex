@@ -11,6 +11,6 @@ defmodule Bytes.Rpc.DefaultHandle do
   alias Bytes.Rpc.Context
 
   def handle(%Context{} = _ctx) do
-    {:error, :error}
+    {:ok, "Welcome to Elixir Rpc"}
   end
 end
