@@ -1,16 +1,16 @@
-# ElixirGrpc
+# ElixirRpc
 
 **TODO: Add description**
 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `elixir_grpc` to your list of dependencies in `mix.exs`:
+by adding `elixir_rpc` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:elixir_rpc, github: "ibytebyte/elixir_rpc"}
+    {:elixir_rpc, github: "dangyuzhang/elixir_rpc"}
   ]
 end
 ```
