@@ -74,7 +74,7 @@ defmodule Bytes.RpcClient do
     with {:ok, %Response{code: code, message: msg, data: data}} <-
            Stub.dispatcher(channel, request),
          {:ok, decoded_data} <- Json.decode(data) do
-      {:reply, {:ok, %{code: code, message: msg, data: decoded_data}}, state}
+      {:reply, {:ok, %{code: code, error: msg, data: decoded_data}}, state}
     else
       {:error, reason} ->
         Logger.error("[RpcClient] RPC call failed: #{inspect(reason)}")
